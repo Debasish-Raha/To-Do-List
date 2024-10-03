@@ -1,0 +1,36 @@
+:root {
+  --light-mode-bg: #ffffff; /* White or light background */
+  --primary-text-color: #000000; /* Dark text color for light mode */
+}
+
+/* Dark mode colors */
+.dark {
+  --dark-mode-bg: #333333; /* Dark background color for dark mode */
+  --dark-mode-primary-text-color: #ffffff; /* Light text color for dark mode */
+}
+.app {
+  background-color: var(--app-bg);
+  color: var(--primary-text-color);
+  min-height: 100vh;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.app_main {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 8%;
+}
+
+.task_column {
+  width: 33.33%;
+  margin: 20px;
+}
+.dark .app {
+  background-color: var(--dark-mode-bg); /* Background color for dark mode */
+  color: var(--dark-mode-primary-text-color); /* Text color for dark mode */
+}
+
+/* Ensure text and other elements are visible in dark mode */
+.dark .task_column {
+  border: 1px solid var(--dark-mode-primary-text-color); /* Example border for task columns */
+}

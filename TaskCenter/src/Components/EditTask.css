@@ -1,0 +1,27 @@
+.edit-task {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Add some space between input and button */
+  }
+  
+  .edit-task-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .edit-task-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .edit-task-icon {
+    width: 20px; /* Set the desired width for the icon */
+    height: 20px; /* Set the desired height for the icon */
+    object-fit: cover;
+  }
+  

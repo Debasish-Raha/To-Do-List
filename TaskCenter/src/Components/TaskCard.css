@@ -1,0 +1,54 @@
+.task_card {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid var(--task-card-border-color, #000000);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: grab;
+}
+.task_card:active{
+    opacity: 0.7;
+    border: 1px solid var(--task-card-active-border-color, #111);
+}
+.task_text {
+    font-size: 16px;
+    font-weight: 520;
+    margin-bottom: 15px;
+}
+
+.task_card_bottom_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task_delete {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.task_delete:hover {
+    background-color: #e5dede;
+}
+
+.delete_icon {
+    width: 40px;
+    height: 25px;
+    opacity: 70%;
+    transition: all 0.3s ease-in-out;
+}
+
+.task_delete:hover .delete_icon {
+    opacity: 80%;
+}
+[data-theme='dark'] .task_card {
+    --task-card-border-color: #ffffff; /* Change border to white in dark mode */
+    --task-card-active-border-color: #cccccc; /* Lighter border when active in dark mode */
+} 
